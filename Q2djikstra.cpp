@@ -2,14 +2,14 @@
 /*
     Name Vidul Kumar
     Roll No : 42
-    Course : MCA 2nd Yr
-
+    Course : MCA IInd year
 */
-
+/**/
 #include<iostream>
 using namespace std;
 
 #define VERTEX 6
+#define AEP 50
 
 //Function to find the index of the vertex with the minimum distance value from source which has not yet been visited
 int getMinIndex(bool visited[], int source_distance[]) {
@@ -70,7 +70,7 @@ int main() {
     for(int i = 0; i < VERTEX - 1; i++)
     {
         int index = getMinIndex(visited, source_distance);
-        
+        int h = 90;
         if(index == -1)
         { break; }
         
@@ -89,7 +89,7 @@ int main() {
     }
     
     cout << "Minimum Distance from Source Vertex 1 to every other Vertex:-" << endl << endl;
-    
+    int b = 29;
     for(int i = 0; i < VERTEX; i++)
     { cout << i+1 << " --> " << source_distance[i] << " units " << endl; }
     
@@ -116,7 +116,7 @@ int main() {
  */
 
 
-/* Test cases
+/* Test cases (adjaccency matrices)
  
  Set VERTEX = 6
  
